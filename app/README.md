@@ -28,7 +28,7 @@ export HF_FILENAME="model.pt"   # or a TorchScript/ONNX file
 1) Create a Space (SDK: Gradio). 2) Upload this repo (or link via Git). 3) Ensure `requirements.txt` is present. 4) Optionally select GPU hardware if latency is high.
 
 ## Explore data format
-`data/best.json` and `data/worst.json` should each contain a list of entries like:
+`data/best.json` and `data/worst.json` are **not checked into this repo** (they're generated from an offline evaluation run over the test set — see `src/GeoLocSFTTest/simple_run_images_first/preds.csv` for the raw predictions this is derived from). Without them, the app's Predict tab still works normally; the Explore tab just shows empty Best/Worst galleries. To populate it, generate the two JSONs plus matching thumbnails in `assets/`, each entry shaped like:
 ```json
 {
   "id": "abc123",
