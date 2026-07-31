@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & model artifacts
+*.ckpt
+data/
+!app/data/
+*.jpg
+*.jpeg
+*.png
+!app/assets/**
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
